@@ -29,13 +29,12 @@ fetch('https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects'
           <h3>${project.name}</h3>
           <p>${project.description}</p>
           <br>
-          <a href="/Circle-Agency/pages/${project.uuid}.html" class="btn">Learn more</a>
+          <a href="/Circle-Agency/pages/${project.name}.html" class="btn">Learn more</a>
         </div>
       </div>
     `).join('');
-
+      
     // Insertar las tarjetas de proyectos recientes en el contenedor correspondiente
     document.querySelector('.project-cards').innerHTML = recentProjectsHTML;
   })
   .catch(error => console.error('Error al obtener datos de la API:', error));
-
