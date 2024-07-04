@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Agency</title>
+    <link rel="stylesheet" href="/Circle-Agency/pages/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <img src="/Circle-Agency/project-assets/logos/circle.svg" alt="logo-circle">
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-home">Home</a></li>
+                <li><a href="#projects" class="nav-projects">Projects</a></li>
+                <li><a href="#services" class="nav-services">Services</a></li>
+            </ul>
+            <a href="#contact-us" class="nav-contact-us">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required oninvalid="this.setCustomValidity('Debes introducir un nombre.')" oninput="this.setCustomValidity('')">
+                
+                <div class="email-phone">
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required oninvalid="this.setCustomValidity('Debes introducir un e-mail')" oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your number" required oninvalid="this.setCustomValidity('Debes introducir tu nº de teléfono')" oninput="this.setCustomValidity('')">
+                    </div>
+                </div>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required oninvalid="this.setCustomValidity('El mensaje debe tener al menos 5 caracteres')" oninput="this.setCustomValidity('')"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="logo-address">
+
+        <a href="/Circle-Agency/Index.html"><img src="/Circle-Agency/project-assets/logos/circle.svg" href="/Circle-Agency/Index.html" alt="circle-logo"></a>
+        <address>2972 Westheimer Rd. Santa Ana,
+            Illinois 85486</address>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li>Team</li>
+                <li>Services</li>
+                <li>About Us</li>
+            </ul>
+            <ul>
+                <li>Press</li>
+                <li>Projects</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/Circle-Agency/pages/script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+</body>
+</html>
